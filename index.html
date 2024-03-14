@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- 
+    - primary meta tags
+  -->
+    <title>U-MONSTER</title>
+    <meta name="title" content="U-MONSTER" />
+    <meta name="description" content="This is a realestate website devloped by codewithsadee" />
+
+    <!-- 
+    - favicon 
+  -->
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
+
+    <!-- 
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet" />
+
+    <!-- 
+    - google icon link
+  -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0..1,0" />
+
+    <!-- 
+    - custom css link
+  -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!-- 
+    - custom js link
+  -->
+    <script src="./assets/js/script.js" defer></script>
+
+    <!-- 
+    - preload images
+  --></head>
+
+  <body>
+    <!-- 
+    - #HEADER
+  -->
+
+    <header class="header" data-header>
+      <div class="container">
+        <a href="#" class="logo">
+          <img src="./assets/images/logo_d.png" width="190" height="28" alt="wealthome" />
+        </a>
+        <nav class="navbar" data-navbar>
+          <ul class="navbar-list">
+            <li>
+              <a href="/pages/about.html" class="navbar-link label-medium">關於我們</a>
+            </li>
+
+            <li>
+              <a href="/pages/knows.html" class="navbar-link label-medium">知識專欄</a>
+            </li>
+
+            <li>
+              <a href="/pages/member.html" class="navbar-link label-medium">會員中心</a>
+            </li>
+
+            <li>
+              <a href="/pages/contact.html" class="navbar-link label-medium">聯絡我們</a>
+            </li>
+          </ul>
+
+          <div class="navbar-wrapper">
+            <a href="#" class="btn-link label-medium">怪獸商城</a>
+
+            <a href="/pages/member.html" class="btn btn-fill label-medium">立即預約</a>
+          </div>
+        </nav>
+
+        <button class="nav-toggle-btn icon-btn" aria-label="toggle navbar" data-nav-toggler>
+          <span class="material-symbols-rounded open" aria-hidden="true">menu</span>
+
+          <span class="material-symbols-rounded close" aria-hidden="true">close</span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <article>
+        <!-- 
+        - #HERO
+      -->
+
+        <section class="hero">
+          <div class="container">
+            <div class="hero-content">
+              <h1 class="headline-large hero-title">你的過程<br />牠的一輩子!</h1>
+
+              <p class="body-large hero-text">透過專業的諮詢服務及課程，拉近與您寵物的距離。</p>
+
+              <form action="./" method="get" class="search-bar">
+                <label class="search-item">
+                  <span class="label-medium label">寵物</span>
+
+                  <select name="want-to" class="search-item-field body-medium">
+                    <option value="buy" selected>狗狗</option>
+                    <option value="sell">貓咪</option>
+                  </select>
+
+                  <span class="material-symbols-rounded" aria-hidden="true">pets</span>
+                </label>
+
+                <label class="search-item">
+                  <span class="label-medium label">相關課程</span>
+
+                  <select name="property-type" class="search-item-field body-medium">
+                    <option value="any" selected>一對一</option>
+                    <option value="houses">團體</option>
+                    <option value="apartments">到府照顧</option>
+                    <option value="villa">安親住宿</option>
+                  </select>
+
+                  <span class="material-symbols-rounded" aria-hidden="true">group</span>
+                </label>
+
+                <label class="search-item">
+                  <span class="label-medium label">寵物幾歲</span>
+
+                  <input type="text" name="location" placeholder="請輸入歲數" class="search-item-field body-medium" />
+
+                  <span class="material-symbols-rounded" aria-hidden="true"> sound_detection_dog_barking </span>
+                </label>
+
+                <button type="submit" class="search-btn">
+                  <span class="material-symbols-rounded" aria-hidden="true">search</span>
+
+                  <span class="label-medium">課程搜尋</span>
+                </button>
+              </form>
+            </div>
+          </div>
+        </section>
+
+        <!-- 
+        - #PROPERTY SECTION
+      -->
+
+        <section class="section property" aria-labelledby="property-label">
+          <div class="container">
+            <div class="title-wrapper">
+              <div>
+                <h2 class="section-title headline-small">主打課程介紹</h2>
+              </div>
+
+              <a href="/course/dog_1.html" class="btn btn-outline">
+                <span class="label-medium">更多介紹</span>
+
+                <span class="material-symbols-rounded" aria-hidden="true">arrow_outward</span>
+              </a>
+            </div>
+
+            <div class="property-list">
+              <div class="card">
+                <div class="card-banner">
+                  <figure class="img-holder" style="--width: 585; --height: 390">
+                    <img src="./assets/images/d-1.jpg" width="585" height="390" alt="COVA Home Realty" class="img-cover" />
+                  </figure>
+
+                  <span class="badge label-medium">DOG</span>
+
+                  <button class="icon-btn fav-btn" aria-label="add to favorite" data-toggle-btn>
+                    <span class="material-symbols-rounded" aria-hidden="true">pet_supplies</span>
+                  </button>
+                </div>
+
+                <div class="card-content">
+                  <span class="title-large">狗狗</span>
+
+                  <h3>
+                    <a href="#" class="title-small card-title">一對一/團體課程</a>
+                  </h3>
+
+                  <address class="body-medium card-text">一直秉持著積極的態度，把正向訓練的精神帶給更多貓家庭與狗家庭。</address>
+
+                  <div class="card-meta-list">
+                    <div class="meta-item">
+                      <span class="material-symbols-rounded meta-icon" aria-hidden="true">pets</span>
+
+                      <span class="meta-text label-medium">1~3隻</span>
+                    </div>
+
+                    <div class="meta-item">
+                      <span class="material-symbols-rounded meta-icon" aria-hidden="true">schedule</span>
+
+                      <span class="meta-text label-medium">約 1hr</span>
+                    </div>
+
+                    <div class="meta-item">
+                      <span class="material-symbols-rounded meta-icon" aria-hidden="true">star</span>
+
+                      <span class="meta-text label-medium">主打課程</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-banner">
+                  <figure class="img-holder" style="--width: 585; --height: 390">
+                    <img src="./assets/images/d-4.jpg" width="585" height="390" alt="Exit Realty" class="img-cover" />
+                  </figure>
+
+                  <span class="badge label-medium">DOG</span>
+
+                  <button class="icon-btn fav-btn" aria-label="add to favorite" data-toggle-btn>
+                    <span class="material-symbols-rounded" aria-hidden="true">pet_supplies</span>
+                  </button>
+                </div>
+
+                <div class="card-content">
+                  <span class="title-large">狗狗</span>
+
+                  <h3>
+                    <a href="#" class="title-small card-title">到府照顧/安親住宿課程</a>
+                  </h3>
+
+                  <address class="body-medium card-text">一直秉持著積極的態度，把正向訓練的精神帶給更多貓家庭與狗家庭。</address>
+
+                  <div class="card-meta-list">
+                    <div class="meta-item">
+                      <span class="material-symbols-rounded meta-icon" aria-hidden="true">pet_supplies</span>
+
+                      <span class="meta-text label-medium">1~3隻</span>
+                    </div>
+
+                    <div class="meta-item">
+                      <span class="material-symbols-rounded meta-icon" aria-hidden="true">schedule</span>
+
+                      <span class="meta-text label-medium">約 1 hr</span>
+                    </div>
+
+                    <div class="meta-item">
+                      <span class="material-symbols-rounded meta-icon" aria-hidden="true">star</span>
+
+                      <span class="meta-text label-medium">主打課程</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-banner">
+                  <figure class="img-holder" style="--width: 585; --height: 390">
+                    <img src="./assets/images/d-2.jpg" width="585" height="390" alt="The Real Estate Group" class="img-cover" />
+                  </figure>
+
+                  <span class="badge label-medium">CAT</span>
+
+                  <button class="icon-btn fav-btn" aria-label="add to favorite" data-toggle-btn>
+                    <span class="material-symbols-rounded" aria-hidden="true">priority_high</span>
+                  </button>
+                </div>
+
+                <div class="card-content">
+                  <span class="title-large">貓咪</span>
+
+                  <h3>
+                    <a href="#" class="title-small card-title">一對一課程</a>
+                  </h3>
+
+                  <address class="body-medium card-text">一直秉持著積極的態度，把正向訓練的精神帶給更多貓家庭與狗家庭。</address>
+
+                  <div class="card-meta-list">
+                    <div class="meta-item">
+                      <span class="material-symbols-rounded meta-icon" aria-hidden="true">pets</span>
+
+                      <span class="meta-text label-medium">1 隻</span>
+                    </div>
+
+                    <div class="meta-item">
+                      <span class="material-symbols-rounded meta-icon" aria-hidden="true">schedule</span>
+
+                      <span class="meta-text label-medium">約 1hr</span>
+                    </div>
+
+                    <div class="meta-item">
+                      <span class="material-symbols-rounded meta-icon" aria-hidden="true">star</span>
+
+                      <span class="meta-text label-medium">主打課程</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-banner">
+                  <figure class="img-holder" style="--width: 585; --height: 390">
+                    <img src="./assets/images/d-3.jpg" width="585" height="390" alt="757 Realty" class="img-cover" />
+                  </figure>
+
+                  <span class="badge label-medium">CAT</span>
+
+                  <button class="icon-btn fav-btn" aria-label="add to favorite" data-toggle-btn>
+                    <span class="material-symbols-rounded" aria-hidden="true">priority_high</span>
+                  </button>
+                </div>
+
+                <div class="card-content">
+                  <span class="title-large">貓咪</span>
+
+                  <h3>
+                    <a href="#" class="title-small card-title">到府照顧課程</a>
+                  </h3>
+
+                  <address class="body-medium card-text">一直秉持著積極的態度，把正向訓練的精神帶給更多貓家庭與狗家庭。</address>
+
+                  <div class="card-meta-list">
+                    <div class="meta-item">
+                      <span class="material-symbols-rounded meta-icon" aria-hidden="true">pets</span>
+
+                      <span class="meta-text label-medium">1 隻</span>
+                    </div>
+
+                    <div class="meta-item">
+                      <span class="material-symbols-rounded meta-icon" aria-hidden="true">schedule</span>
+
+                      <span class="meta-text label-medium">約 1hr</span>
+                    </div>
+
+                    <div class="meta-item">
+                      <span class="material-symbols-rounded meta-icon" aria-hidden="true">star</span>
+
+                      <span class="meta-text label-medium">主打課程</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </article>
+    </main>
+
+    <div class="container">
+      <div class="title-wrapper">
+        <div>
+          <h2 class="section-title headline-small">最新消息</h2>
+          <div class="news">建置中...</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="title-wrapper">
+        <div>
+          <h2 class="section-title headline-small">期間限定課程</h2>
+        </div>
+      </div>
+      <div class="property-list">
+        <div class="card">
+          <div class="card-banner">
+            <figure class="img-holder" style="--width: 585; --height: 390">
+              <img src="./assets/images/l-1.jpg" width="585" height="390" alt="COVA Home Realty" class="img-cover" />
+            </figure>
+
+            <span class="badge label-medium">NEW</span>
+
+            <button class="icon-btn fav-btn" aria-label="add to favorite" data-toggle-btn>
+              <span class="material-symbols-rounded" aria-hidden="true">pet_supplies</span>
+            </button>
+          </div>
+
+          <div class="card-content">
+            <span class="title-large">狗狗</span>
+
+            <h3>
+              <a href="/limited/lesson.html" class="title-small card-title">期間限定課程名稱</a>
+            </h3>
+
+            <address class="body-medium card-text">一直秉持著積極的態度，把正向訓練的精神帶給更多貓家庭與狗家庭。</address>
+
+            <div class="card-meta-list">
+              <div class="meta-item">
+                <span class="material-symbols-rounded meta-icon" aria-hidden="true">pets</span>
+
+                <span class="meta-text label-medium">1~3隻</span>
+              </div>
+
+              <div class="meta-item">
+                <span class="material-symbols-rounded meta-icon" aria-hidden="true">schedule</span>
+
+                <span class="meta-text label-medium">3/14~17</span>
+              </div>
+
+              <div class="meta-item">
+                <span class="material-symbols-rounded meta-icon" aria-hidden="true">star</span>
+
+                <span class="meta-text label-medium">限定推出</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-banner">
+            <figure class="img-holder" style="--width: 585; --height: 390">
+              <img src="./assets/images/l-2.jpg" width="585" height="390" alt="Exit Realty" class="img-cover" />
+            </figure>
+
+            <span class="badge label-medium">NEW</span>
+
+            <button class="icon-btn fav-btn" aria-label="add to favorite" data-toggle-btn>
+              <span class="material-symbols-rounded" aria-hidden="true">pet_supplies</span>
+            </button>
+          </div>
+
+          <div class="card-content">
+            <span class="title-large">狗狗</span>
+
+            <h3>
+              <a href="#" class="title-small card-title">期間限定課程名稱</a>
+            </h3>
+
+            <address class="body-medium card-text">一直秉持著積極的態度，把正向訓練的精神帶給更多貓家庭與狗家庭。</address>
+
+            <div class="card-meta-list">
+              <div class="meta-item">
+                <span class="material-symbols-rounded meta-icon" aria-hidden="true">pet_supplies</span>
+
+                <span class="meta-text label-medium">1~3隻</span>
+              </div>
+
+              <div class="meta-item">
+                <span class="material-symbols-rounded meta-icon" aria-hidden="true">schedule</span>
+
+                <span class="meta-text label-medium">5/1~5/3</span>
+              </div>
+
+              <div class="meta-item">
+                <span class="material-symbols-rounded meta-icon" aria-hidden="true">star</span>
+
+                <span class="meta-text label-medium">限定推出</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-banner">
+            <figure class="img-holder" style="--width: 585; --height: 390">
+              <img src="./assets/images/l-3.jpg" width="585" height="390" alt="The Real Estate Group" class="img-cover" />
+            </figure>
+
+            <span class="badge label-medium">NEW</span>
+
+            <button class="icon-btn fav-btn" aria-label="add to favorite" data-toggle-btn>
+              <span class="material-symbols-rounded" aria-hidden="true">priority_high</span>
+            </button>
+          </div>
+
+          <div class="card-content">
+            <span class="title-large">貓咪</span>
+
+            <h3>
+              <a href="#" class="title-small card-title">期間限定課程名稱</a>
+            </h3>
+
+            <address class="body-medium card-text">一直秉持著積極的態度，把正向訓練的精神帶給更多貓家庭與狗家庭。</address>
+
+            <div class="card-meta-list">
+              <div class="meta-item">
+                <span class="material-symbols-rounded meta-icon" aria-hidden="true">bed</span>
+
+                <span class="meta-text label-medium">1~3隻</span>
+              </div>
+
+              <div class="meta-item">
+                <span class="material-symbols-rounded meta-icon" aria-hidden="true">schedule</span>
+
+                <span class="meta-text label-medium">6/5~6/8</span>
+              </div>
+
+              <div class="meta-item">
+                <span class="material-symbols-rounded meta-icon" aria-hidden="true">star</span>
+
+                <span class="meta-text label-medium">限定推出</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-banner">
+            <figure class="img-holder" style="--width: 585; --height: 390">
+              <img src="./assets/images/l-4.jpg" width="585" height="390" alt="757 Realty" class="img-cover" />
+            </figure>
+
+            <span class="badge label-medium">NEW</span>
+
+            <button class="icon-btn fav-btn" aria-label="add to favorite" data-toggle-btn>
+              <span class="material-symbols-rounded" aria-hidden="true">priority_high</span>
+            </button>
+          </div>
+
+          <div class="card-content">
+            <span class="title-large">貓咪</span>
+
+            <h3>
+              <a href="#" class="title-small card-title">期間限定課程名稱</a>
+            </h3>
+
+            <address class="body-medium card-text">一直秉持著積極的態度，把正向訓練的精神帶給更多貓家庭與狗家庭。</address>
+
+            <div class="card-meta-list">
+              <div class="meta-item">
+                <span class="material-symbols-rounded meta-icon" aria-hidden="true">bed</span>
+
+                <span class="meta-text label-medium">1~3隻</span>
+              </div>
+
+              <div class="meta-item">
+                <span class="material-symbols-rounded meta-icon" aria-hidden="true">schedule</span>
+
+                <span class="meta-text label-medium">2/2~2/5</span>
+              </div>
+
+              <div class="meta-item">
+                <span class="material-symbols-rounded meta-icon" aria-hidden="true">star</span>
+
+                <span class="meta-text label-medium">限定推出</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br/ >
+
+    <!-- 
+    - #FOOTER
+  -->
+
+    <footer class="footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="footer-brand">
+            <a href="#" class="logo">
+              <img src="./assets/images/logo_d.png" width="190" height="28" alt="wealthome" />
+            </a>
+
+            <p class="body-medium footer-text">有怪獸寵物行為矯正中心。</p>
+          </div>
+
+          <nav class="footer-nav" aria-labelledby="nav-label-1">
+            <p class="title-small footer-list-title" id="nav-label-1">主要項目</p>
+
+            <ul class="footer-list">
+              <li>
+                <a href="#" class="body-medium footer-link">關於我們</a>
+              </li>
+
+              <li>
+                <a href="#" class="body-medium footer-link">服務項目</a>
+              </li>
+
+              <li>
+                <a href="#" class="body-medium footer-link">知識專欄</a>
+              </li>
+
+              <li>
+                <a href="#" class="body-medium footer-link">聯絡我們</a>
+              </li>
+            </ul>
+          </nav>
+
+          <nav class="footer-nav" aria-labelledby="nav-label-2">
+            <p class="title-small footer-list-title" id="nav-label-2">另外連結</p>
+
+            <ul class="footer-list">
+              <li>
+                <a href="#" class="body-medium footer-link">會員中心</a>
+              </li>
+
+              <li>
+                <a href="#" class="body-medium footer-link">怪獸商城</a>
+              </li>
+            </ul>
+          </nav>
+
+          <nav class="footer-nav" aria-labelledby="nav-label-3">
+            <p class="title-small footer-list-title" id="nav-label-3">聯絡方式</p>
+
+            <ul class="footer-list">
+              <li>
+                <a href="#" class="body-medium footer-link">umonster.asia@gmail.com</a>
+              </li>
+
+              <li>
+                <address class="address body-medium">0900-761-178</address>
+              </li>
+
+              <li>
+                <address class="address body-medium">台中市⻄屯區市政北一路1號3樓</address>
+              </li>
+
+              <li>
+                <ul class="social-list">
+                  <li>
+                    <a href="#" class="social-link">
+                      <img src="./assets/images/facebook.svg" alt="facebook" />
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="social-link">
+                      <img src="./assets/images/insta.svg" alt="instagram" />
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="container">
+          <p class="copyright body-medium">Copyright 2024 U-MONSTER</p>
+        </div>
+      </div>
+    </footer>
+
+    <a href="#top" class="go-top" data-go-top>
+      <button class="btn btn-primary">立即預約</button>
+    </a>
+  </body>
+</html>
