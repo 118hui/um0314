@@ -563,7 +563,7 @@ body {
 .navbar-wrapper {
   display: grid;
   gap: 8px;
-  color:black;
+  color: white;
 }
 
 .navbar-link,
@@ -1037,7 +1037,7 @@ body {
   flex-direction: row;
   gap: 25px; /* 調整條目內部元素之間的垂直間距 */
   padding: 25px;
-  background: #FFFCEC; /* 背景顏色 */
+  background: #fffcec; /* 背景顏色 */
   border-radius: 8px; /* 圓角 */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 陰影效果 */
 }
@@ -1059,13 +1059,12 @@ body {
   color: #555; /* 內文字體顏色 */
 }
 
-
 .knows_list {
   display: flex;
   flex-direction: column;
   gap: 10px; /* 調整每個條目之間的垂直間距 */
   padding: 15px;
-  background-color: #FFFCEC; /* 背景顏色 */
+  background-color: #fffcec; /* 背景顏色 */
   border-radius: 8px; /* 圓角 */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 陰影效果 */
   margin-top: 20px;
@@ -1078,7 +1077,7 @@ body {
 
 .image {
   flex: 0 0 auto; /* 不伸縮，保持固定寬度 */
-  width: 100px; /* 設定小圖片的寬度 */
+  width: 120px; /* 設定小圖片的寬度 */
   height: 100px; /* 設定小圖片的高度 */
   border-radius: 8px; /* 小圖片圓角 */
   overflow: hidden; /* 超出範圍隱藏 */
@@ -1103,6 +1102,96 @@ body {
 .text {
   font-size: 16px; /* 內文字體大小 */
   color: #555; /* 內文字體顏色 */
+}
+
+/* 聯絡我們 */
+.contact-wrapper {
+  display: flex;
+  justify-content: center; /* 將左側內容置中 */
+  padding: 20px;
+}
+
+.contact-form {
+  width: 400px; /* 調整表單寬度 */
+  background-color: #fffcec;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h2 {
+  margin-bottom: 20px;
+}
+
+.contact-form label,
+.contact-form input,
+.contact-form textarea,
+.contact-form button {
+  display: block;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.contact-form button {
+  background-color: #2e5099;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* 諮詢表單 */
+.consultation-form-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.consultation-form {
+  width: 600px;
+  background-color: #fffcec;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.consultation-form h2 {
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.form-group button {
+  background-color: #2e5099;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 15px;
+  cursor: pointer;
+  float: right;
 }
 
 /*-----------------------------------*\

@@ -76,7 +76,7 @@
                 <div class="navbar-wrapper">
                     <a href="#" class="btn-link label-medium">怪獸商城</a>
 
-                    <a href="#" class="btn btn-fill label-medium">立即預約</a>
+                    <a href="register.html" class="btn btn-fill label-medium">立即預約</a>
                 </div>
             </nav>
 
@@ -115,7 +115,25 @@
                 <div class="title-wrapper">
                     <div>
                         <h2 class="section-title headline-small">聯絡我們</h2>
-                        <h3>內容建置中...</h3>
+                        <div class="contact-wrapper">
+                            <div class="contact-form">
+                              <form action="#" method="post">
+                                <label for="name" class="title-small">姓名：</label>
+                                <input type="text" id="name" name="name" required>
+                          
+                                <label for="phone" class="title-small">電話：</label>
+                                <input type="tel" id="phone" name="phone" required>
+                          
+                                <label for="email" class="title-small">E-mail：</label>
+                                <input type="email" id="email" name="email" required>
+                          
+                                <label for="message" class="title-small">內容：</label>
+                                <textarea id="message" name="message" rows="4" required></textarea>
+                          
+                                <button type="submit">送出</button>
+                              </form>
+                            </div>
+                          </div>
                     </div>
                 </div>
             </div>
