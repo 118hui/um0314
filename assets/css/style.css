@@ -1025,84 +1025,105 @@ body {
   cursor: pointer;
 }
 
+.latest-news {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+
+.section-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 15px;
+}
+/*最新消息*/
 .news-list {
   display: flex;
   flex-direction: column;
-  gap: 20px; /* 調整每個條目之間的垂直間距 */
-  margin-top: 20px;
 }
 
 .news-item {
-  display: flex;
-  flex-direction: row;
-  gap: 25px; /* 調整條目內部元素之間的垂直間距 */
-  padding: 25px;
-  background: #fffcec; /* 背景顏色 */
-  border-radius: 8px; /* 圓角 */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 陰影效果 */
-}
-
-.news-item p {
-  margin: 0; /* 清除段落的預設邊距 */
-}
-
-.news-item h3 {
-  margin: 0 0 5px; /* 調整標題的下邊距 */
-}
-
-.news-item .subtitle {
-  font-weight: bold; /* 粗體字 */
-  color: #333; /* 字體顏色 */
-}
-
-.news-item .content {
-  color: #555; /* 內文字體顏色 */
-}
-
-.knows_list {
-  display: flex;
-  flex-direction: column;
-  gap: 10px; /* 調整每個條目之間的垂直間距 */
+  background-color: #fff;
   padding: 15px;
-  background-color: #fffcec; /* 背景顏色 */
-  border-radius: 8px; /* 圓角 */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 陰影效果 */
-  margin-top: 20px;
+  border-radius: 10px;
+  margin-bottom: 15px;
 }
 
-.knows_item {
+.news-info {
   display: flex;
-  align-items: start; /* 垂直居上 */
+  align-items: center;
+  margin-bottom: 10px;
 }
 
-.image {
-  flex: 0 0 auto; /* 不伸縮，保持固定寬度 */
-  width: 120px; /* 設定小圖片的寬度 */
-  height: 100px; /* 設定小圖片的高度 */
-  border-radius: 8px; /* 小圖片圓角 */
-  overflow: hidden; /* 超出範圍隱藏 */
+.news-date {
+  font-size: 14px;
+  color: #999;
+  margin-right: 10px;
 }
 
-.image img {
-  width: 100%; /* 圖片寬度填滿容器 */
-  height: 100%; /* 圖片高度填滿容器 */
-  object-fit: cover; /* 圖片填充方式 */
+.news-title {
+  font-size: 18px;
+  color: #333;
+  margin: 0;
 }
 
-.content {
-  flex: 1; /* 伸縮，佔據剩餘空間 */
-  padding-left: 20px; /* 左側間距 */
+.news-content {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 10px;
 }
 
-.title {
-  font-size: 18px; /* 小標題字體大小 */
-  font-weight: bold; /* 小標題粗體 */
+.read-more {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
 }
 
-.text {
-  font-size: 16px; /* 內文字體大小 */
-  color: #555; /* 內文字體顏色 */
+.read-more:hover {
+  text-decoration: underline;
 }
+
+
+/*知識專欄*/
+.main-content {
+  padding: 20px 0;
+}
+
+.blog-post {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+.post-image {
+  width: 150px; /* 調整圖片寬度 */
+  height: auto; /* 保持高度自適應 */
+  margin-right: 20px;
+}
+
+.post-content {
+  flex: 1;
+}
+
+.post-title {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.post-summary {
+  font-size: 14px;
+  color: #666;
+}
+
+.read-more {
+  display: inline-block;
+  margin-top: 10px;
+  color: blue;
+}
+
 
 /* 聯絡我們 */
 .contact-wrapper {
@@ -1687,4 +1708,41 @@ body {
 /* 按鈕在小尺寸螢幕上置中 */
 .button-submit {
   align-self: center;
+}
+
+
+/* 最新消息 */
+@media screen and (min-width: 375px) {
+  /* iPhone X */
+  .news-item {
+    padding: 15px;
+  }
+
+  .title-large {
+    font-size: 20px;
+    display: block;
+  }
+}
+
+@media screen and (min-width: 414px) {
+  /* iPhone 12、13 */
+  .news-item {
+    padding: 20px;
+  }
+
+  .title-large {
+    font-size: 22px;
+  }
+}
+
+@media screen and (min-width: 428px) {
+  /* iPhone 12 Pro Max、13 Pro Max */
+  .news-item {
+    padding: 25px;
+  }
+
+  .title-large {
+    font-size: 24px;
+    display:flex;
+  }
 }
