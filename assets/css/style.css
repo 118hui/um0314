@@ -284,8 +284,14 @@ body {
 }
 
 .title-wrapper {
-  margin-block-end: 32px;
-  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.button-container {
+  display: flex;
+  gap: 10px; /* 按鈕之間的間距 */
 }
 
 .img-holder {
@@ -1045,6 +1051,7 @@ body {
 
 .news-item {
   background-color: #fff;
+  box-shadow: var(--shadow-2);
   padding: 15px;
   border-radius: 10px;
   margin-bottom: 15px;
@@ -1063,7 +1070,7 @@ body {
 }
 
 .news-title {
-  font-size: 18px;
+  font-size: 20px;
   color: #333;
   margin: 0;
 }
@@ -1084,7 +1091,6 @@ body {
   text-decoration: underline;
 }
 
-
 /*知識專欄*/
 .main-content {
   padding: 20px 0;
@@ -1094,13 +1100,14 @@ body {
   display: flex;
   align-items: center;
   padding: 10px;
-  border-radius: 10px;
+  border-radius: 15px;
   background-color: #fff;
+  width: 100%;
 }
 
 .post-image {
-  width: 150px; /* 調整圖片寬度 */
-  height: auto; /* 保持高度自適應 */
+  width: 160px; /* 調整圖片寬度 */
+  height: 160px; /* 保持高度自適應 */
   margin-right: 20px;
 }
 
@@ -1124,6 +1131,84 @@ body {
   color: blue;
 }
 
+/* 分頁結構 */
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination a,
+.pagination span {
+  padding: 5px 10px;
+  text-decoration: none;
+  color: #333;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 0 2px;
+}
+
+.pagination a:hover {
+  background-color: #f0f0f0;
+}
+
+.pagination .active {
+  background-color: #007bff;
+  color: #fff;
+  border-color: #007bff;
+}
+
+.pagination .prev,
+.pagination .next {
+  font-weight: bold;
+}
+
+.pagination ul {
+  list-style-type: none;
+  display: flex;
+}
+
+.pagination ul li {
+  margin: 0 2px;
+}
+
+/* 麵包屑 */
+.breadcrumb {
+  font-size: 16px;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+.breadcrumb ol {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.breadcrumb li {
+  margin-right: 5px;
+}
+
+.breadcrumb li:last-child {
+  font-weight: bold;
+}
+
+.breadcrumb a {
+  color: black;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.breadcrumb a:hover {
+  color: #0056b3;
+}
+
+.breadcrumb .active {
+  color: #333;
+}
+
+/* 知識搜尋 */
 
 /* 聯絡我們 */
 .contact-wrapper {
@@ -1213,6 +1298,31 @@ body {
   border-radius: 15px;
   cursor: pointer;
   float: right;
+}
+/*下拉選單*/
+.sub-menu {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  border-radius: 15px;
+  min-width: 120px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.navbar-link:hover + .sub-menu,
+.sub-menu:hover {
+  display: block;
+}
+
+.sub-menu li {
+  display: block;
+}
+
+.sub-menu li a {
+  padding: 10px;
+  text-decoration: none;
+  color: #333;
 }
 
 /*-----------------------------------*\
@@ -1379,28 +1489,6 @@ body {
   }
 }
 
-.go-top {
-  position: fixed;
-  bottom: 20px;
-  right: 35px;
-  width: 80px;
-  height: 60px;
-  display: flex;
-  place-items: center;
-  opacity: 0;
-  transform: translateY(10px);
-  transition: var(--transition);
-}
-
-.go-top.active {
-  opacity: 0.8;
-  transform: translateY(0);
-  visibility: visible;
-}
-
-.go-top:is(:hover, :focus) {
-  opacity: 1;
-}
 /**
  * responsive for larger than 992px screen
  */
@@ -1710,7 +1798,6 @@ body {
   align-self: center;
 }
 
-
 /* 最新消息 */
 @media screen and (min-width: 375px) {
   /* iPhone X */
@@ -1743,6 +1830,6 @@ body {
 
   .title-large {
     font-size: 24px;
-    display:flex;
+    display: flex;
   }
 }
