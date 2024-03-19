@@ -191,15 +191,6 @@ body {
   width: 12px;
 }
 
-::-webkit-scrollbar-track {
-  background-color: var(--neutral-90);
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: var(--neutral-60);
-  border-radius: 4px;
-}
-
 /*-----------------------------------*\
   #TYPOGRAPHY
 \*-----------------------------------*/
@@ -507,12 +498,13 @@ body {
   width: 100%;
   height: 100px;
   z-index: 4;
+  color: black;
 }
 
 .header.active {
   animation: slide_in 500ms ease forwards;
   height: 72px;
-  background-color: #f4ead1;
+  background-color: white;
 }
 
 @keyframes slide_in {
@@ -570,12 +562,12 @@ body {
 .navbar-wrapper {
   display: grid;
   gap: 8px;
-  color: black;
+  color: white;
 }
 
 .navbar-link,
 .btn-link {
-  color: #0c0c0d;
+  color: white;
   padding: 6px 12px;
   transition: var(--transition-duration-quick) var(--transition-easing-quick);
 }
@@ -587,7 +579,7 @@ body {
 
 :is(.navbar-link, .btn-link):is(:hover, :focus-visible),
 .navbar-link.active {
-  color: white;
+  color: black;
 }
 
 .navbar .btn {
@@ -627,7 +619,7 @@ body {
 
 .search-bar {
   background: var(--white);
-  opacity: 0.6;
+  opacity: 0.7;
   display: grid;
   padding: 8px;
   gap: 8px;
@@ -1102,30 +1094,6 @@ body {
   float: right;
 }
 /*下拉選單*/
-.sub-menu {
-  display: none;
-  position: absolute;
-  background-color: #fff;
-  border-radius: 15px;
-  min-width: 120px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-}
-
-.navbar-link:hover + .sub-menu,
-.sub-menu:hover {
-  display: block;
-}
-
-.sub-menu li {
-  display: block;
-}
-
-.sub-menu li a {
-  padding: 10px;
-  text-decoration: none;
-  color: #333;
-}
 
 /*-----------------------------------*\
   #MEDIA QUERIES
@@ -1235,8 +1203,9 @@ body {
   }
 
   .feature-list {
+    display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 16px;
+    gap: px;
   }
 
   /**
@@ -1457,6 +1426,7 @@ body {
   }
 
   .feature-list {
+    display: grid;
     grid-template-columns: 1fr;
   }
 
