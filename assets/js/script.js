@@ -48,3 +48,25 @@ function toggleLogin() {
     loginButton.textContent = '登入';
   }
 }
+
+document.addEventListener('DOMContentLoaded', function () {
+  const submitButton = document.getElementById('submitButton');
+  const toastContainer = document.querySelector('.toast-container');
+
+  submitButton.addEventListener('click', function (e) {
+    e.preventDefault(); // 防止點擊按鈕後跳轉頁面
+    showToast('success', '成功！');
+  });
+
+  // 顯示 Toast
+  function showToast(type, message) {
+    const toast = document.createElement('div');
+    toast.classList.add('toast', type);
+    toast.textContent = message;
+    toastContainer.appendChild(toast);
+    setTimeout(() => {
+      toast.style.display = 'none';
+      toast.remove();
+    }, 3000); // 3 秒後自動隱藏並移除
+  }
+});
