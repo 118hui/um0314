@@ -824,6 +824,7 @@ body {
   height: 50px;
   width: 100%;
   cursor: pointer;
+  padding: 10px;
 }
 
 .latest-news {
@@ -1775,8 +1776,6 @@ footer {
   background-color: #28a745; /* 綠色背景 */
 }
 
-
-
 .money {
   max-width: 600px;
   margin: 50px auto;
@@ -1796,7 +1795,7 @@ label {
   font-weight: bold;
 }
 
-input[type="text"],
+input[type='text'],
 select {
   width: 100%;
   padding: 8px;
@@ -1821,11 +1820,14 @@ select {
   background-color: #0056b3;
 }
 
-
-
-
 .icon_money {
-  bottom:40px;
-  height:170px;
-  font-size:20px;
+  bottom: 40px;
+  height: 170px;
+  font-size: 20px;
+}
+
+/*icon*/
+i {
+  font-size: 3rem;
+  color: white;
 }

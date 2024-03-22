@@ -38,6 +38,7 @@
     - custom js link
   -->
     <script src="../assets/js/script.js" defer></script>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
 
     <!-- 
     - preload images
@@ -65,21 +66,19 @@
                     </li>
 
                     <li>
-                        <a href="#" class="navbar-link label-medium">會員中心</a>
+                        <a href="/course/course_full.html" class="navbar-link label-medium">服務項目</a>
                     </li>
 
                     <li>
                         <a href="Contact.html" class="navbar-link label-medium">聯絡我們</a>
                     </li>
+
+                    <a class="icon_member" href="#"><i class="bx bx-user"></i></a>
                 </ul>
 
                 <div class="navbar-wrapper">
-                    <div class="login-status">
-                        <span id="loginStatus">未登入</span></p>
-                        <button id="loginButton" onclick="toggleLogin()">登入</button>
-                      </div>
-
-                    <a href="register.html" class="btn btn-fill label-medium">立即預約</a>
+                    <a href="#" class="btn-link label-medium">怪獸商城</a>
+                    <a href="/order/order.html" class="btn btn-fill label-medium">訂單查詢</a>
                 </div>
             </nav>
 
@@ -129,8 +128,9 @@
                           </div>
                           <span class="span">忘記密碼?</span>
                         </div>
+
+                        <a href="member_person.html" id="loginButton" class="button-submit">登入</a>
                         
-                        <button href="form.html" id="loginButton" class="button-submit">LOGIN</button>
                     
                         <p class="p">尚未加入會員? <a href="register.html" class="span">註冊</a>
                     
