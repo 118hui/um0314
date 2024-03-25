@@ -1,11 +1,239 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-  </head>
-  <body>
-    money
-  </body>
+    <meta name="title" content="U-MONSTER" />
+    <meta name="description" content="This is a realestate website devloped by codewithsadee" />
+
+    <!-- 
+    - favicon 
+  -->
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
+
+    <!-- 
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet" />
+
+    <!-- 
+    - google icon link
+  -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0..1,0" />
+
+    <!-- 
+    - custom css link
+  -->
+    <link rel="stylesheet" href="../assets/css/style.css" />
+
+    <!-- 
+    - custom js link
+  -->
+    <script src="../assets/js/script.js" defer></script>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+
+
+</head>
+
+<body>
+    <header class="header" data-header>
+        <div class="container">
+            <a href="#" class="logo">
+                <img src="../assets/images/logo_d.png" width="190" height="28" alt="logo" />
+            </a>
+            <nav class="navbar" data-navbar>
+                <ul class="navbar-list">
+                    <li>
+                        <a href="/pages/about.html" class="navbar-link label-medium">關於有怪獸</a>
+                    </li>
+
+                    <li>
+                        <a href="/limited/all_lesson.html" class="navbar-link label-medium">期間限定課程</a>
+                    </li>
+
+                    <li>
+                        <a href="/course/course_full.html" class="navbar-link label-medium">服務項目</a>
+                    </li>
+
+                    <li>
+                        <a href="/content/all_news.html" class="navbar-link label-medium">最新消息</a>
+                    </li>
+
+                    <li>
+                        <a href="/pages/knows.html" class="navbar-link label-medium">知識專欄</a>
+                    </li>
+
+                    <li>
+                        <a href="/pages/contact.html" class="navbar-link label-medium">聯絡我們</a>
+                    </li>
+
+                    <a class="icon_member" href="/pages/member.html"><i class="bx bx-user"></i></a>
+                </ul>
+
+                <div class="navbar-wrapper">
+
+                    <a href="/order/order.html" class="btn btn-fill label-medium">訂單查詢</a>
+                </div>
+            </nav>
+
+            <button class="nav-toggle-btn icon-btn" aria-label="toggle navbar" data-nav-toggler>
+            <span class="material-symbols-rounded open" aria-hidden="true">menu</span>
+  
+            <span class="material-symbols-rounded close" aria-hidden="true">close</span>
+          </button>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="headline-large hero-title">填寫<br />匯款通知</h1>
+
+                <p class="body-large hero-text">使用無摺存款的客人：郵局局號在收據右邊的戳章內可看到。若看不清楚的話，請留郵局分行的名稱也可以！</p>
+
+            </div>
+    </section>
+
+    <div class="container">
+        <div class="title-wrapper">
+            <div>
+                <h2 class="section-title headline-small">匯款通知</h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="money">
+        <h2>匯款通知表單</h2>
+        <form id="paymentForm">
+            <div class="form-group-money">
+                <label for="orderNumber">訂單號碼</label>
+                <input type="text" id="orderNumber" name="orderNumber" required>
+            </div>
+            <div class="form-group-money">
+                <label for="name">姓名</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group-money">
+                <label for="phone">電話</label>
+                <input type="text" id="phone" name="phone" required>
+            </div>
+            <div class="form-group-money">
+                <label for="lineId">Line ID</label>
+                <input type="text" id="lineId" name="lineId" required>
+            </div>
+            <div class="form-group-money">
+                <label for="paymentMethod">匯款方式</label>
+                <select id="paymentMethod" name="paymentMethod" required>
+              <option value="">請選擇匯款方式</option>
+              <option value="ATM轉帳">ATM轉帳</option>
+              <option value="網路銀行">網路銀行</option>
+            </select>
+            </div>
+            <div class="form-group-money">
+                <label for="lastFiveDigits">帳號後五碼</label>
+                <input type="text" id="lastFiveDigits" name="lastFiveDigits" required>
+            </div>
+            <button type="submit" class="btn_money">送出</button>
+        </form>
+    </div>
+
+
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <img src="../assets/images/logo_d.png" width="190" height="28" alt="wealthome" />
+                    </a>
+
+                    <p class="body-medium footer-text">有怪獸寵物行為矯正中心。</p>
+                </div>
+
+                <nav class="footer-nav" aria-labelledby="nav-label-1">
+                    <p class="title-small footer-list-title" id="nav-label-1">主要項目</p>
+
+                    <ul class="footer-list">
+                        <li>
+                            <a href="/pages/about.html" class="body-medium footer-link">關於有怪獸</a>
+                        </li>
+                        <li>
+                            <a href="#" class="body-medium footer-link">會員中心</a>
+                        </li>
+
+                        <li>
+                            <a href="/pages/contact.html" class="body-medium footer-link">聯絡我們</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <nav class="footer-nav" aria-labelledby="nav-label-2">
+                    <p class="title-small footer-list-title" id="nav-label-2">課程項目</p>
+
+                    <ul class="footer-list">
+                        <li>
+                            <a href="/pages/knows.html" class="body-medium footer-link">期間限定課程</a>
+                        </li>
+
+                        <li>
+                            <a href="/course/course_full.html" class="body-medium footer-link">服務項目</a>
+                        </li>
+
+                        <li>
+                            <a href="/course/course_full.html" class="body-medium footer-link">最新消息</a>
+                        </li>
+
+                        <li>
+                            <a href="/course/course_full.html" class="body-medium footer-link">知識專欄</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <nav class="footer-nav" aria-labelledby="nav-label-3">
+                    <p class="title-small footer-list-title" id="nav-label-3">聯絡方式</p>
+
+                    <ul class="footer-list">
+                        <li>
+                            <a href="#" class="body-medium footer-link">umonster.asia@gmail.com</a>
+                        </li>
+
+                        <li>
+                            <address class="address body-medium">0900-761-178</address>
+                        </li>
+
+                        <li>
+                            <address class="address body-medium">台中市⻄屯區市政北一路1號3樓</address>
+                        </li>
+
+                        <li>
+                            <ul class="social-list">
+                                <li>
+                                    <a href="#" class="social-link">
+                                        <img src="../assets/images/facebook.svg" alt="facebook" />
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="social-link">
+                                        <img src="../assets/images/insta.svg" alt="instagram" />
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <p class="copyright body-medium">Copyright 2024 U-MONSTER</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
 </html>

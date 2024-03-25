@@ -1010,49 +1010,7 @@ body {
 
 /* 知識搜尋 */
 
-/* 聯絡我們 */
-.contact-wrapper {
-  display: flex;
-  justify-content: center; /* 將左側內容置中 */
-  padding: 20px;
-}
 
-.contact-form {
-  width: 400px; /* 調整表單寬度 */
-  background-color: #fffcec;
-  border-radius: 10px;
-  padding: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.contact-form h2 {
-  margin-bottom: 20px;
-}
-
-.contact-form label,
-.contact-form input,
-.contact-form textarea,
-.contact-form button {
-  display: block;
-  width: 100%;
-  margin-bottom: 15px;
-}
-
-.contact-form input,
-.contact-form textarea {
-  padding: 10px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-}
-
-.contact-form button {
-  background-color: #2e5099;
-  color: #fff;
-  border: none;
-  padding: 10px;
-  border-radius: 5px;
-  cursor: pointer;
-}
 
 /* 諮詢表單 */
 .consultation-form-wrapper {
@@ -1251,17 +1209,16 @@ body {
   /**
    * FOOTER
    */
-
-  .footer-top .container {
+.footer-top .container {
     padding-block: 40px;
     grid-template-columns: repeat(3, 1fr);
   }
 
-  .footer-brand {
+.footer-brand {
     grid-column: 1 / 4;
   }
 
-  .footer-text {
+.footer-text {
     max-width: 400px;
   }
 }
@@ -1806,3 +1763,124 @@ select {
   font-size: 3rem;
   color: black;
 }
+
+
+
+#contact {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 1vw;
+}
+
+#contact .getin {
+  width: 350px;
+  background-color: #fff;
+  border-radius:20px;
+  padding:18px;
+}
+
+#contact .getin h2 {
+  font-size: 30px;
+  color: #2c234d;
+  font-weight: 800;
+  line-height: 1.5;
+  margin-bottom: 16px;
+}
+
+#contact .getin p {
+  color: black;
+  line-height: 24px;
+  border-bottom: 1px solid #e5e4ed;
+  margin-bottom: 33px;
+  padding-bottom: 25px;
+  font-size:20px;
+  font-weight:bold;
+}
+
+#contact .getin .getin-details h3 {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #fca017;
+}
+
+#contact .getin .getin-details div {
+  display: flex;
+}
+
+#contact .getin .getin-details .get {
+  font-size: 20px;
+  line-height: 22px;
+  color: #5838fc;
+  margin-right: 20px;
+}
+
+#contact .getin .getin-details div p {
+  font-size: 14px;
+  border-bottom: none;
+  line-height: 22px;
+  margin-bottom: 15px;
+}
+
+#contact .getin .getin-details .pro-link i {
+  margin-right: 8px;
+}
+
+
+
+
+#map {
+  width: 100%;
+  height: 70vh;
+}
+
+#map iframe {
+  width: 100%;
+  height: 100%;
+}
+
+
+/*訂單list*/
+.order-list {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.order-list label {
+  display: flex;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.order-list input[type="text"] {
+  width: calc(100% - 30px);
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.order-list .btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.order-list .btn:hover {
+  background-color: #0056b3;
+}
+
