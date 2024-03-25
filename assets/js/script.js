@@ -10,7 +10,7 @@ const /** {NodeElement} */ $navToggler = document.querySelector('[data-nav-toggl
 $navToggler.addEventListener('click', () => $navbar.classList.toggle('active'));
 
 /**
- * Header scroll state
+ * Header scroll state 先不使用這效果
  */
 
 const /** {NodeElement} */ $header = document.querySelector('[data-header]');
