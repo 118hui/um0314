@@ -283,8 +283,9 @@ body {
 }
 
 .button-container {
-  display: flex;
-  gap: 10px; /* 按鈕之間的間距 */
+  display: block;
+  gap: 10px;
+  margin-top: 20px;
 }
 
 .img-holder {
@@ -608,6 +609,7 @@ body {
   display: grid;
   place-items: center;
   min-height: 600px;
+  min-width: 440px;
   text-align: center;
   padding-top: 125px;
 }
@@ -1010,8 +1012,6 @@ body {
 
 /* 知識搜尋 */
 
-
-
 /* 諮詢表單 */
 .consultation-form-wrapper {
   display: flex;
@@ -1020,7 +1020,7 @@ body {
 }
 
 .consultation-form {
-  width: 600px;
+  width: 500px;
   background-color: #fffcec;
   border-radius: 10px;
   padding: 20px;
@@ -1164,6 +1164,7 @@ body {
   .feature-content .feature-text {
     margin-block: 16px 24px;
     line-height: 28px;
+    text-indent: 50px;
   }
 
   .feature-list {
@@ -1209,16 +1210,16 @@ body {
   /**
    * FOOTER
    */
-.footer-top .container {
+  .footer-top .container {
     padding-block: 40px;
     grid-template-columns: repeat(3, 1fr);
   }
 
-.footer-brand {
+  .footer-brand {
     grid-column: 1 / 4;
   }
 
-.footer-text {
+  .footer-text {
     max-width: 400px;
   }
 }
@@ -1516,7 +1517,7 @@ body {
   }
 
   .inputForm {
-    height: 40px; /* 調整輸入框高度 */
+    height: 65px; /* 調整輸入框高度 */
   }
 
   .button-submit {
@@ -1711,9 +1712,10 @@ header h1 {
 .money {
   max-width: 600px;
   margin: 50px auto;
-  padding: 20px;
+  padding: 30px;
   border: 1px solid #ccc;
-  border-radius: 8px;
+  border-radius: 10px;
+  background-color: #fff;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -1764,8 +1766,6 @@ select {
   color: black;
 }
 
-
-
 #contact {
   display: flex;
   align-items: flex-start;
@@ -1776,8 +1776,8 @@ select {
 #contact .getin {
   width: 350px;
   background-color: #fff;
-  border-radius:20px;
-  padding:18px;
+  border-radius: 20px;
+  padding: 18px;
 }
 
 #contact .getin h2 {
@@ -1794,8 +1794,8 @@ select {
   border-bottom: 1px solid #e5e4ed;
   margin-bottom: 33px;
   padding-bottom: 25px;
-  font-size:20px;
-  font-weight:bold;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 #contact .getin .getin-details h3 {
@@ -1828,9 +1828,6 @@ select {
   margin-right: 8px;
 }
 
-
-
-
 #map {
   width: 100%;
   height: 70vh;
@@ -1840,7 +1837,6 @@ select {
   width: 100%;
   height: 100%;
 }
-
 
 /*訂單list*/
 .order-list {
@@ -1858,7 +1854,7 @@ select {
   font-weight: bold;
 }
 
-.order-list input[type="text"] {
+.order-list input[type='text'] {
   width: calc(100% - 30px);
   padding: 8px;
   border: 1px solid #ccc;
@@ -1883,4 +1879,3 @@ select {
 .order-list .btn:hover {
   background-color: #0056b3;
 }
-
