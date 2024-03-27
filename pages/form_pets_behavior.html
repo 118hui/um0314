@@ -104,31 +104,41 @@
         <div class="hero-content">
           <h1 class="headline-large hero-title">諮詢表單</h1>
 
-          <p class="body-large hero-text" style="font-size: 20px; color: #fff">基本資料</p>
+          <p class="body-large hero-text" style="font-size: 20px; color: #fff">寵物行為資料</p>
         </div>
 
         <div class="consultation-form-wrapper">
           <div class="consultation-form">
-            <h2>基本資料</h2>
+            <h2>寵物資料</h2>
             <form action="#" method="post">
               <div class="form-group">
-                <label for="parentName">手機 *</label>
+                <label for="parentName">家中是否有其他寵物 *</label>
                 <input type="text" id="parentName" name="parentName" required />
               </div>
               <div class="form-group">
-                <label for="parentName">Line ID *</label>
+                <label for="parentName">簡單敘述毛孩讓人困擾的問題(限30字)*</label>
                 <input type="text" id="parentName" name="parentName" required />
               </div>
+
               <div class="form-group">
-                <label for="parentGender">哪裡知道有怪獸 *</label>
+                <label for="parentGender">是否出現侵略的行為 *</label>
                 <select id="parentGender" name="parentGender" required>
-                  <option value="male">FACEBOOK</option>
-                  <option value="female">朋友推薦</option>
+                  <option value="choose">請選擇</option>
+                  <option value="male">否</option>
+                  <option value="female">是</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="parentGender">希望諮詢時間 *</label>
+                <select id="parentGender" name="parentGender" required>
+                  <option value="choose">請選擇</option>
+                  <option value="male">早上</option>
+                  <option value="female">下午</option>
                 </select>
               </div>
               <div class="form-group">
                 <button type="submit">
-                  <a href="form_pets.html">下一頁</a>
+                  <a href="talk.html">完成</a>
                 </button>
               </div>
             </form>

@@ -260,8 +260,8 @@ body {
 }
 
 .container {
-  padding-inline: 16px;
-  max-width: 580px;
+  padding-inline: 10px;
+  max-width: 420px;
   width: 100%;
   margin-inline: auto;
 }
@@ -820,7 +820,7 @@ body {
 }
 
 .button-submit {
-  margin: 20px 0 10px 0;
+  margin: 10px 0 10px 0;
   background-color: #151717;
   border: none;
   color: white;
@@ -1020,7 +1020,7 @@ body {
 }
 
 .consultation-form {
-  width: 500px;
+  width: 315px;
   background-color: #fffcec;
   border-radius: 10px;
   padding: 20px;
@@ -1164,7 +1164,6 @@ body {
   .feature-content .feature-text {
     margin-block: 16px 24px;
     line-height: 28px;
-    text-indent: 50px;
   }
 
   .feature-list {

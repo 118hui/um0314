@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- 
     - primary meta tags
   -->
-    <title>Wealthome</title>
+    <title>U-MONSTER</title>
     <meta name="title" content="Wealthome" />
     <meta name="description" content="This is a realestate website devloped by codewithsadee" />
 
@@ -37,250 +36,204 @@
     <!-- 
     - custom js link
   -->
-    <script src="../assets/js/script.js" defer></script>
+
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <script src="../assets/js/script.js" defer></script>
 
     <!-- 
     - preload images
-  -->
-</head>
+  --></head>
 
-<body>
+  <body>
     <!-- 
     - #HEADER
   -->
 
     <header class="header" data-header>
-        <div class="container">
-            <a href="../index.html" class="logo">
-                <img src="../assets/images/logo_d.png" width="190" height="28" alt="wealthome" />
-            </a>
-            <nav class="navbar" data-navbar>
-              <ul class="navbar-list">
-                <li>
-                  <a href="/pages/about.html" class="navbar-link label-medium">關於有怪獸</a>
-                </li>
-    
-                <li>
-                  <a href="/limited/all_lesson.html" class="navbar-link label-medium">期間限定課程</a>
-                </li>
-    
-                <li>
-                  <a href="/course/course_full.html" class="navbar-link label-medium">服務項目</a>
-                </li>
-    
-                <li>
-                  <a href="/content/all_news.html" class="navbar-link label-medium">最新消息</a>
-                </li>
-    
-                <li>
-                  <a href="/pages/knows.html" class="navbar-link label-medium">知識專欄</a>
-                </li>
-    
-                <li>
-                  <a href="/pages/contact.html" class="navbar-link label-medium">聯絡我們</a>
-                </li>
-    
-                <a class="icon_member" href="/pages/member.html"><i class="bx bx-user"></i></a>
-              </ul>
+      <div class="container">
+        <a href="../index.html" class="logo">
+          <img src="../assets/images/logo_d.png" width="190" height="28" alt="wealthome" />
+        </a>
+        <nav class="navbar" data-navbar>
+          <ul class="navbar-list">
+            <li>
+              <a href="/pages/about.html" class="navbar-link label-medium">關於有怪獸</a>
+            </li>
 
-                <div class="navbar-wrapper">
-                    
+            <li>
+              <a href="/limited/all_lesson.html" class="navbar-link label-medium">期間限定課程</a>
+            </li>
 
-                    <a href="#" class="btn btn-fill label-medium">立即預約</a>
-                </div>
-            </nav>
+            <li>
+              <a href="/course/course_full.html" class="navbar-link label-medium">服務項目</a>
+            </li>
 
-            <button class="nav-toggle-btn icon-btn" aria-label="toggle navbar" data-nav-toggler>
+            <li>
+              <a href="/content/all_news.html" class="navbar-link label-medium">最新消息</a>
+            </li>
+
+            <li>
+              <a href="/pages/knows.html" class="navbar-link label-medium">知識專欄</a>
+            </li>
+
+            <li>
+              <a href="/pages/contact.html" class="navbar-link label-medium">聯絡我們</a>
+            </li>
+
+            <a class="icon_member" href="/pages/member.html"><i class="bx bx-user"></i></a>
+          </ul>
+
+          <div class="navbar-wrapper">
+            <a href="../order/order.html" class="btn btn-fill label-medium">訂單查詢</a>
+          </div>
+        </nav>
+
+        <button class="nav-toggle-btn icon-btn" aria-label="toggle navbar" data-nav-toggler>
           <span class="material-symbols-rounded open" aria-hidden="true">menu</span>
 
           <span class="material-symbols-rounded close" aria-hidden="true">close</span>
         </button>
-        </div>
+      </div>
     </header>
 
-    <main>
-        <article>
-            <!-- 
+    <!-- 
         - #HERO
       -->
 
-            <section class="hero">
-                <div class="container">
-                    <div class="hero-content">
-                        <h1 class="headline-large hero-title">有怪獸預約<br />諮詢表單</h1>
-                        <p class="body-large hero-text">表單填寫頁面，填寫完成並送出後，才能繼續預約作業。</p>
-                    </div>
-                </div>
-            </section>
-
-            <div class="container">
-                <div class="title-wrapper">
-                    <div>
-                        <h2 class="section-title headline-small">有怪獸諮詢表單</h2>
-                        <div class="consultation-form-wrapper">
-                            <div class="consultation-form">
-                                <h2>基本資料</h2>
-                              <form action="#" method="post">
-                                <div class="form-group">
-                                  <label for="parentName">家長（主要照顧者）的姓名 *</label>
-                                  <input type="text" id="parentName" name="parentName" required>
-                                </div>
-                                <div class="form-group">
-                                  <label for="parentGender">家長（主要照顧者）的性別 *</label>
-                                  <select id="parentGender" name="parentGender" required>
-                                    <option value="male">男性</option>
-                                    <option value="female">女性</option>
-                                  </select>
-                                </div>
-                                <div class="form-group">
-                                    <label for="parentGender">家長（主要照顧者）的年紀 *</label>
-                                    <select id="parentGender" name="parentGender" required>
-                                      <option value="male">18~30歲</option>
-                                      <option value="female">30~50歲</option>
-                                    </select>
-                                </div>
-                                <div class="form-group">
-                                    <label for="parentName">家長（主要照顧者）的地址 *</label>
-                                    <input type="text" id="parentName" name="parentName" required>
-                                  </div>
-                                  <div class="form-group">
-                                    <label for="parentName">手機 *</label>
-                                    <input type="text" id="parentName" name="parentName" required>
-                                  </div>
-                                  <div class="form-group">
-                                    <label for="parentName">Line ID *</label>
-                                    <input type="text" id="parentName" name="parentName" required>
-                                  </div>
-                                  <div class="form-group">
-                                    <label for="parentGender">哪裡知道有怪獸 *</label>
-                                    <select id="parentGender" name="parentGender" required>
-                                      <option value="male">FACEBOOK</option>
-                                      <option value="female">朋友推薦</option>
-                                    </select>
-                                </div>
-                                <!-- 其他表單項目依此類推 -->
-                                <div class="form-group">
-                                    <button type="submit">
-                                        <a href="form_second.html">下一頁</a>
-                                      </button>
-                                </div>
-                              </form>
-                            </div>
-                          </div>
-                    </div>
-                </div>
-            </div>
-
-
-            
-
-
-            <!-- 
-  
-      -->
-
-
-
-
-            <!-- 
-    - #FOOTER
-  -->
-
-  <footer class="footer">
-    <div class="footer-top">
+    <section class="hero">
       <div class="container">
-        <div class="footer-brand">
-          <a href="#" class="logo">
-            <img src="../assets/images/logo_d.png" width="190" height="28" alt="wealthome" />
-          </a>
-
-          <p class="body-medium footer-text">有怪獸寵物行為矯正中心。</p>
+        <div class="hero-content">
+          <h1 class="headline-large hero-title">諮詢表單</h1>
         </div>
 
-        <nav class="footer-nav" aria-labelledby="nav-label-1">
-          <p class="title-small footer-list-title" id="nav-label-1">主要項目</p>
-
-          <ul class="footer-list">
-            <li>
-              <a href="/pages/about.html" class="body-medium footer-link">關於有怪獸</a>
-            </li>
-            <li>
-              <a href="#" class="body-medium footer-link">會員中心</a>
-            </li>
-
-            <li>
-              <a href="/pages/contact.html" class="body-medium footer-link">聯絡我們</a>
-            </li>
-          </ul>
-        </nav>
-
-        <nav class="footer-nav" aria-labelledby="nav-label-2">
-          <p class="title-small footer-list-title" id="nav-label-2">課程項目</p>
-
-          <ul class="footer-list">
-            <li>
-              <a href="/pages/knows.html" class="body-medium footer-link">期間限定課程</a>
-            </li>
-
-            <li>
-              <a href="/course/course_full.html" class="body-medium footer-link">服務項目</a>
-            </li>
-
-            <li>
-              <a href="/course/course_full.html" class="body-medium footer-link">最新消息</a>
-            </li>
-
-            <li>
-              <a href="/course/course_full.html" class="body-medium footer-link">知識專欄</a>
-            </li>
-          </ul>
-        </nav>
-
-        <nav class="footer-nav" aria-labelledby="nav-label-3">
-          <p class="title-small footer-list-title" id="nav-label-3">聯絡方式</p>
-
-          <ul class="footer-list">
-            <li>
-              <a href="#" class="body-medium footer-link">umonster.asia@gmail.com</a>
-            </li>
-
-            <li>
-              <address class="address body-medium">0900-761-178</address>
-            </li>
-
-            <li>
-              <address class="address body-medium">台中市⻄屯區市政北一路1號3樓</address>
-            </li>
-
-            <li>
-              <ul class="social-list">
-                <li>
-                  <a href="#" class="social-link">
-                    <img src="../assets/images/facebook.svg" alt="facebook" />
-                  </a>
-                </li>
-
-                <li>
-                  <a href="#" class="social-link">
-                    <img src="../assets/images/insta.svg" alt="instagram" />
-                  </a>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </nav>
+        <div class="consultation-form-wrapper">
+          <div class="consultation-form">
+            <h2>基本資料</h2>
+            <form action="#" method="post">
+              <div class="form-group">
+                <label for="parentName">家長（主要照顧者）的姓名 *</label>
+                <input type="text" id="parentName" name="parentName" required />
+              </div>
+              <div class="form-group">
+                <label for="parentGender">家長（主要照顧者）的性別 *</label>
+                <select id="parentGender" name="parentGender" required>
+                  <option value="male">男性</option>
+                  <option value="female">女性</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="parentGender">家長（主要照顧者）的年紀 *</label>
+                <select id="parentGender" name="parentGender" required>
+                  <option value="male">18~30歲</option>
+                  <option value="female">30~50歲</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="parentName">家長（主要照顧者）的地址 *</label>
+                <input type="text" id="parentName" name="parentName" required />
+              </div>
+              <div class="form-group">
+                <button type="submit">
+                  <a href="form_second.html">下一頁</a>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
 
-    <div class="footer-bottom">
-      <div class="container">
-        <p class="copyright body-medium">Copyright 2024 U-MONSTER</p>
+    <footer class="footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="footer-brand">
+            <a href="#" class="logo">
+              <img src="../assets/images/logo_d.png" width="190" height="28" alt="wealthome" />
+            </a>
+
+            <p class="body-medium footer-text">有怪獸寵物行為矯正中心。</p>
+          </div>
+
+          <nav class="footer-nav" aria-labelledby="nav-label-1">
+            <p class="title-small footer-list-title" id="nav-label-1">主要項目</p>
+
+            <ul class="footer-list">
+              <li>
+                <a href="/pages/about.html" class="body-medium footer-link">關於有怪獸</a>
+              </li>
+              <li>
+                <a href="#" class="body-medium footer-link">會員中心</a>
+              </li>
+
+              <li>
+                <a href="/pages/contact.html" class="body-medium footer-link">聯絡我們</a>
+              </li>
+            </ul>
+          </nav>
+
+          <nav class="footer-nav" aria-labelledby="nav-label-2">
+            <p class="title-small footer-list-title" id="nav-label-2">課程項目</p>
+
+            <ul class="footer-list">
+              <li>
+                <a href="/pages/knows.html" class="body-medium footer-link">期間限定課程</a>
+              </li>
+
+              <li>
+                <a href="/course/course_full.html" class="body-medium footer-link">服務項目</a>
+              </li>
+
+              <li>
+                <a href="/course/course_full.html" class="body-medium footer-link">最新消息</a>
+              </li>
+
+              <li>
+                <a href="/course/course_full.html" class="body-medium footer-link">知識專欄</a>
+              </li>
+            </ul>
+          </nav>
+
+          <nav class="footer-nav" aria-labelledby="nav-label-3">
+            <p class="title-small footer-list-title" id="nav-label-3">聯絡方式</p>
+
+            <ul class="footer-list">
+              <li>
+                <a href="#" class="body-medium footer-link">umonster.asia@gmail.com</a>
+              </li>
+
+              <li>
+                <address class="address body-medium">0900-761-178</address>
+              </li>
+
+              <li>
+                <address class="address body-medium">台中市⻄屯區市政北一路1號3樓</address>
+              </li>
+
+              <li>
+                <ul class="social-list">
+                  <li>
+                    <a href="#" class="social-link">
+                      <img src="../assets/images/facebook.svg" alt="facebook" />
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="social-link">
+                      <img src="../assets/images/insta.svg" alt="instagram" />
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
-    </div>
-  </footer>
 
-           
-</body>
-
+      <div class="footer-bottom">
+        <div class="container">
+          <p class="copyright body-medium">Copyright 2024 U-MONSTER</p>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>

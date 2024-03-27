@@ -37,7 +37,7 @@
     <!-- 
     - custom js link
   -->
-    <script src="../assets/js/script.js"></script>
+    <script src="../assets/js/script.js" defer></script>
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
 
     <!-- 
@@ -108,32 +108,30 @@
                 <div class="container">
                     <div class="hero-content">
                         <h1 class="headline-large hero-title">訂單查詢</h1>
-                        <p class="body-large hero-text"></p>
-                        <div class="toast-container">
-                            <div class="toast success">操作成功！</div>
-                            <div class="toast error">操作失敗！</div>
-                        </div>
                     </div>
+                    <div class="consultation-form-wrapper">
+                        <div class="consultation-form">
+                          <h2>訂單編號</h2>
+                          <form action="#" method="post">
+                            <div class="form-group">
+                              <label for="parentName">請輸入號碼</label>
+                              <input type="text" id="parentName" name="parentName" required />
+                            </div>
+                            <div class="form-group">
+                                <label for="parentName">圖形驗證碼</label>
+                                <input type="text" id="parentName" name="parentName" required />
+                                <p>中英混圖片</p>
+                                <p style="text-decoration: underline;">更新驗證碼</p>
+                              </div>
+                            <div class="form-group">
+                              <button type="submit">
+                                <a href="form_second.html">送出</a>
+                              </button>
+                            </div>
+                          </form>
+                        </div>
                 </div>
             </section>
-
-            <div class="container">
-                <div class="title-wrapper">
-
-                    <div class="search-container">
-                        <input type="text" placeholder="輸入訂單號碼...">
-                        <div type="submit"><i class="fa fa-search"></i></div>
-                        <a href="/order/money.html" id="submitButton" class="btn btn-fill label-medium">送出</a>
-                        <div class="toast-container"></div>
-                    </div>
-
-                </div>
-            </div>
-
-
-
-
-
             <!-- 
     - #FOOTER
   -->
